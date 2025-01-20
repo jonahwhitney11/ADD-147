@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adding JavaScript to HTML</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/script.js"></script>
+  <script>
+    function cuteKids() {
+      document.getElementById("intro").innerHTML="They're cute, aren't they?"
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Adding JS to HTML - Assessment 1</h1>
+  </header>
+
+  <main>
+
+    <button type="button" onclick="infoMercer()">Show Mercer's birthday</button>
+    <button type="button" onclick="infoQuinn()">Show Quinn's birthday</button>
+    <button type="button" onclick="cuteKids()">They're cute</button>
+
+  <p id="intro"></p>
+  <script>
+    document.getElementById("intro").innerHTML="These are my children Quinn, who is almost 3, and Mercer, who just turned 1!"
+  </script>
+
+  <div class="buttons">
+            <button onclick="document.getElementById('kids').src='images/Kids.jpeg'">Kids</button>
+            <button onclick="document.getElementById('kids').src='images/Mercer.jpeg'">Mercer</button>
+            <button onclick="document.getElementById('kids').src='images/Quinn.jpeg'">Quinn</button>
+        </div>
+
+  <button type="button" onclick='document.getElementById("kids").style.width = "50%";'>Change Width</button>
+  <button type="button" onclick='document.getElementById("intro").innerHTML="They get even cuter when they get bigger!"'>Wow!</button>
+  <img src="images/Kids.jpeg" alt="children" id="kids" class="center">
+  <div class="buttons">
+    <button onclick="document.getElementById('kids').style.display='block'">show</button>
+    <button onclick="document.getElementById('kids').style.display='none'">hide</button>
+  </div>
+  </main>
+  <footer>&copy;2025 Jonah Whitney</footer>
+</body>
+</html>
