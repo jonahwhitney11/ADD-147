@@ -56,8 +56,9 @@ function estimate() {
   let cost3 = (totalSqFt3 * .65);
   document.getElementById("rm3cost").value = cost3;
 
+  var totalCost = 0
   if (numRooms == 1) {
-    var totalCost = cost;
+    totalCost = cost;
   } else if (numRooms == 2) {
     totalCost = cost + cost2
   } else if (numRooms == 3) {
