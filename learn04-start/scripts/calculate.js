@@ -8,6 +8,20 @@ function addDate() {
   document.getElementById("rm1cost").value = "";
 }
 
+function showScreen() {
+  numRooms = document.getElementById("rooms").value;
+  if (numRooms == 1) {
+    document.getElementById("room2").style.display = "none";
+    document.getElementById("room3").style.display = "none";
+  } else if (numRooms == 2) {
+    document.getElementById("room2").style.display = "block";
+    document.getElementById("room3").style.display = "none";
+  } else if (numRooms == 3) {
+    document.getElementById("room2").style.display = "block";
+    document.getElementById("room3").style.display = "block";
+  }
+}
+
 function estimate() {
 
   let name = document.getElementById("name").value;
