@@ -19,5 +19,5 @@ function estimate() {
   document.getElementById("rm1cost").value = cost;
 
   var totalCost = cost;
-  document.getElementById("estimate").innerHTML = (name + ", ");
+  document.getElementById("estimate").innerHTML = (name + ", your estimate is $" + totalCost + ".");
 }
