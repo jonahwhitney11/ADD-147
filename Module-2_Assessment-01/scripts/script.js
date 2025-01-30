@@ -34,8 +34,10 @@ function getDogPrice() {
     // alert(dogPrice) - Checking that dogPrice is being updated.
   }
 
-  dogPrice *= dogQuantity
-  alert("Hotdog(s) added to order. Total for hotdogs is: " + orderTotal)
+  if (dogQuantity > 0) {
+    dogPrice *= dogQuantity
+  }
+  alert("Hotdog(s) added to order. Total for hotdogs is: " + dogPrice)
 
   return dogPrice
 }
@@ -52,12 +54,21 @@ function getSidesPrice() {
   let chiliQuantity = parseFloat(document.getElementById("chiliQuantity").value)
   var chiliTotal = chiliQuantity * 6
 
-  sidesPrice += friesTotal
-  sidesPrice += chipsTotal
-  sidesPrice += taterTotsTotal
-  sidesPrice += soupTotal
-  sidesPrice += chiliTotal
-
+  if (friesQuantity > 0) {
+    sidesPrice += friesTotal
+  }
+  if (chipsQuantity > 0) {
+    sidesPrice += chipsTotal
+  }
+  if (taterTotsQuantity >= 0) {
+    sidesPrice += taterTotsTotal
+  }
+  if (soupQuantity > 0) {
+    sidesPrice += soupTotal
+  }
+  if (chiliQuantity > 0) {
+    sidesPrice += chiliTotal
+  }
   alert("Side(s) added to order. Total for sides is: " + sidesPrice)
   return sidesPrice
 }
@@ -91,4 +102,17 @@ function getDrinksPrice() {
   }
   alert("Drinks(s) added to order. Total for drinks is: " + drinksPrice)
   return drinksPrice
+}
+
+function getOrderTotal() {
+  let name = document.getElementById("name").value
+
+  orderTotal += dogPrice
+  orderTotal += sidesPrice
+  orderTotal += drinksPrice
+
+  document.getElementById("hotdogTotal").innerHTML = (name + ", your total for hotdogs is: $" + dogPrice)
+  document.getElementById("sidesTotal").innerHTML = (name + ", your total for sides is: $" + sidesPrice)
+  document.getElementById("drinksTotal").innerHTML = (name + ", your total for drinks is: $" + drinksPrice)
+  document.getElementById("orderTotal").innerHTML = (name + ", your total for this order is: $" + orderTotal)
 }
