@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form basics, math, and variables</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Form basics, math, and variables.</h1>
+  </header>
+
+  <main class="container">
+    <form>
+      <div class="top">
+        <label for="name">Customer Name:</label>
+        <input type="text" id="name" name="fname"><br>
+        <h2>Menu</h2>
+      </div>
+
+      <div class="grid-container">
+
+        <div class="hotdog" id="hotdog">
+          <h3>Hotdog - $7</h3>
+
+          <label for="style">What style?</label>
+          <select name="style" id="style">
+            <option value="0">Select your style</option>
+            <option value="0">Plain Dog</option>
+            <option value="2">Seattle Style +$2</option>
+            <option value="2">Chicago Style +$2</option>
+            <option value="5">Chili Cheese +$5</option>
+          </select>
+          <p></p>
+          <h3>Add-ons</h3>
+          <input type="checkbox" id="bacon" name="bacon" value="2">
+          <label for="bacon">Bacon - +$2</label>
+          <br>
+          <input type="checkbox" id="cheese" name="cheese" value="2">
+          <label for="cheese">Cheese - +$2</label>
+          <br>
+          <input type="checkbox" id="addChili" name="addChili" value="5">
+          <label for="chili" id="addChili">Chili - +$5</label>
+          <br>
+          <p></p>
+          <label for="hotdogQuantity">Quantity</label>
+          <input type="text" id="hotdogQuantity" width:="" 20="">
+          <p></p>
+          <button type="button" onclick="getDogPrice()">Add to order</button>
+        </div>
+
+        <div class="sides" id="sides">
+          <h3>Sides</h3>
+          <label for="fries">Fries - $2</label> <br>
+          <label for="friesQuantity">Quantity</label>
+          <input type="text" id="friesQuantity"> <br> <br>
+
+          <label for="chips">Chips - $2</label> <br>
+          <label for="chipsQuantity">Quantity</label>
+          <input type="text" id="chipsQuantity"> <br><br>
+
+          <label for="taterTots">Tater Tots - $2</label> <br>
+          <label for="taterTotsQuantity">Quantity</label>
+          <input type="text" id="taterTotsQuantity"> <br><br>
+
+          <label for="soup">Soup - $4</label> <br>
+          <label for="soupQuantity">Quantity</label>
+          <input type="text" id="soupQuantity"> <br><br>
+
+          <label for="chili">Chili - $6</label> <br>
+          <label for="chiliQuantity">Quantity</label>
+          <input type="text" id="chiliQuantity"> <br>
+          <p></p>
+          <button type="button" onclick="getSidesPrice()">Add to order</button>
+        </div>
+
+        <div class="drinks" id="drinks">
+          <h3>Drinks</h3>
+          <label for="soda">Soda - $2</label> <br>
+          <label for="sodaQuantity">Quantity</label>
+          <input type="text" id="sodaQuantity"> <br> <br>
+
+          <label for="milkshake">Milkshake - $5</label> <br>
+          <label for="milkshakeQuantity">Quantity</label>
+          <input type="text" id="milkshakeQuantity"> <br><br>
+
+          <label for="coffee">Coffee - $2</label> <br>
+          <label for="coffeeQuantity">Quantity</label>
+          <input type="text" id="coffeeQuantity"> <br><br>
+
+          <label for="beer">Beer - $4</label> <br>
+          <label for="beerQuantity">Quantity</label>
+          <input type="text" id="beerQuantity"> <br><br>
+
+          <label for="cocktail">Cocktail - $6</label> <br>
+          <label for="cocktailQuantity">Quantity</label>
+          <input type="text" id="cocktailQuantity"> <br>
+          <p></p>
+          <button type="button" onclick="getDrinksPrice()">Add to order</button>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <button type="button" onclick="">Finish Order</button>
+        <h3>Order Summary</h3>
+        <p id="estimate"></p>
+      </div>
+    </form>
+  </main>
+
+  <footer>&copy;2025 Jonah Whitney</footer>
+</body>
+
+</html>
