@@ -1,0 +1,242 @@
+/* --------------------- CSS Reset -------------------- */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul,
+dl {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*  ---------------------- Variables ---------------------- */
+
+:root {
+    --primary: #009698;
+    --primary-light: #8559da;
+    --primary-dark: #005253;
+    --secondary: #ffc107;
+    --secondary-light: #fff350;
+    --secondary-dark: #c79100;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
+
+/*                        Media Queries - Responsive Layout        */
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* ---------------------- layout ------------------------- */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    color: var(--text-dark);
+}
+
+div {
+  border: 3px solid var(--primary);
+  border-radius: 20px;
+}
+
+h2, div {
+  text-align: center;
+}
+
+img {
+  max-width: 75%;
+  align-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--primary);
+    color: var(--text-light);
+}
+
+header {
+    background: var(--primary);
+    color: var(--text-light);
+    min-height: 80px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary);
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h3 {
+    text-align: center;
+    color: var(--primary);
+    font-weight: bold;
+}
