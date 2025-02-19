@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/scripts.js"></script>
+
+</head>
+
+<body onload="setRandomNum(1, 1000)">
+
+  <div class="grid-container">
+    <div class="header">
+      <h2>Module 2 - Assessment 4</h2>
+    </div>
+
+    <div class="left">
+      <h3>Guess a number between 1 and 1000!</h3>
+      <form>
+        <label for="guess">Enter Number</label>
+        <input type="text" id="guess">
+        <button type="button" id="submit" onclick="processGuess()">Submit</button>
+      </form>
+    </div>
+    <div class="right">
+      <p id="right-text"></p>
+    </div>
+
+    <div class="footer">
+      <p>&copy; Jonah Whitney 2025</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
