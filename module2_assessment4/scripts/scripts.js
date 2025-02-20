@@ -4,10 +4,31 @@ let newNumDifference = 0;
 let warmStreak = 0;
 let coldStreak = 0;
 
+
 function setRandomNum(min, max) {
   randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
   alert(randomNum); // testing randomNum
 }
+
+function updateColor() {
+  let rightDiv = document.getElementById("right");
+
+  if (!rightDiv) {
+    console.error("Element with ID 'right' not found!");
+    return;
+  }
+
+  // Remove only color-related classes, keeping "right" for grid layout
+  rightDiv.classList.remove("hot", "cold");
+
+  if (warmStreak > 0) {
+    rightDiv.classList.add("hot");
+  } else if (coldStreak > 0) {
+    rightDiv.classList.add("cold");
+  }
+}
+
+
 
 function processGuess() {
   let userGuess = parseFloat(document.getElementById("guess").value);
@@ -67,4 +88,5 @@ function processGuess() {
 
   newNumDifference = numDifference; // Update for next guess
   firstGuess = false;
+  updateColor()
 }
