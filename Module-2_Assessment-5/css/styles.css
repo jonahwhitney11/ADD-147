@@ -1,0 +1,100 @@
+/* Meyer’s Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Make sure elements are displayed correctly */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Reset list styles */
+ol, ul {
+    list-style: none;
+}
+
+/* Remove quotes in blockquotes */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Remove table spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*  ---------------------- Variables ---------------------- */
+
+:root {
+    --primary: #009dc9;
+    --primary-light: #00c8ff;
+    --primary-dark: #006c8a;
+    --secondary: #1c07ff;
+    --secondary-light: #6a5cff;
+    --secondary-dark: #0e00a8;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
+/* Ensure consistent box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+    background-color: var(--primary-dark);
+    color:var(--text-light);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Style the columns */
+.content{
+    padding: 10px;
+    margin: 20px;
+}
+
+.content h2 {
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+/* Style the footer */
+.footer {
+    background-color: var(--primary-dark);
+    color:var(--text-light);
+    padding: 10px;
+    text-align: center;
+}
+
