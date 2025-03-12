@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #FB4F14;
+    color: white;
+    padding: 20px;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.roster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.player-card {
+    background: black;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.player-card h2 {
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.player-card p {
+    margin: 2px 0;
+    font-size: 16px;
+}
