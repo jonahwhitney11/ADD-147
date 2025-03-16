@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Beer Picker</title>
+</head>
+
+<body>
+  <Header>
+    <h1>Beer Picker</h1>
+  </Header>
+
+  <div class="filters">
+    <label for="styleFilter">Style:</label>
+    <select id="styleFilter">
+      <option value="">Choose Style</option>
+      <option value="IPA">IPA</option>
+      <option value="Stout">Stout</option>
+      <option value="Lager">Lager</option>
+    </select>
+    <span> OR </span>
+    <label for="breweryFilter">Brewery:</label>
+    <select id="breweryFilter">
+      <option value="">Choose Brewery</option>
+      <option value="Brewery A">Brewery A</option>
+      <option value="Brewery B">Brewery B</option>
+    </select>
+  </div>
+
+  <div id="beerContainer" class="beer-container">
+    <!-- Beer cards will be created in the script, the ones here are temporary -->
+    <div class="beer-card">
+      <h2>Beer Name</h2>
+      <img src="https://fakeimg.pl/200x320" alt="">
+      <p>Brewer (Kishwaukee Brewing, Sierra Nevade, etc.)</p>
+      <p>Style (ipa, lager, pilsner, etc.)</p>
+    </div>
+
+    <div class="beer-card">
+      <h2>Beer Name</h2>
+      <img src="https://fakeimg.pl/200x320" alt="">
+      <p>Brewer (Kishwaukee Brewing, Sierra Nevade, etc.)</p>
+      <p>Style (ipa, lager, pilsner, etc.)</p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; Jonah Whitney 2025
+  </footer>
+
+
+</html>
