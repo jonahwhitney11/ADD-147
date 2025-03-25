@@ -12,21 +12,16 @@
   <h1>Beer Picker</h1>
 </Header>
 
-<body>
+<body onload="displayBeers(), populateFilters()">
   <div class="filters">
     <label for="styleFilter">Style:</label>
     <select id="styleFilter">
-      <option value="">Choose Style</option>
-      <option value="IPA">IPA</option>
-      <option value="Stout">Stout</option>
-      <option value="Lager">Lager</option>
+      <option value="">All Styles</option>
     </select>
     <span> OR </span>
     <label for="breweryFilter">Brewery:</label>
     <select id="breweryFilter">
-      <option value="">Choose Brewery</option>
-      <option value="Brewery A">Brewery A</option>
-      <option value="Brewery B">Brewery B</option>
+      <option value="">All Breweries</option>
     </select>
   </div>
 
