@@ -43,7 +43,7 @@ function displayBeers() {
     beerDiv.classList.add("beer-card");
 
     var beerImage = document.createElement("img");
-    beerImage.src = beer.image || 'https://fakeimg.pl/200x300';
+    beerImage.src = beer.image;
 
     var beerName = document.createElement("h2");
     beerName.textContent = beer.name;
