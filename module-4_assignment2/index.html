@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#hide-show-button").click(function () {
+        $("#hide-show").toggle();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#fade").click(function () {
+        $("#mercer").fadeToggle();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#slide").click(function () {
+        $("#quinn").slideToggle();
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <h1>JQuery Effects</h1>
+
+  <div id="hide-show">
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores est suscipit sequi nobis sed cumque, praesentium
+      consequatur similique unde eveniet voluptatum sunt qui adipisci cupiditate, eos, blanditiis vitae sapiente.
+      Corrupti! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores est suscipit sequi nobis sed cumque,
+      praesentium
+      consequatur similique unde eveniet voluptatum sunt qui adipisci cupiditate, eos, blanditiis vitae sapiente.
+      Corrupti! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores est suscipit sequi nobis sed cumque,
+      praesentium
+      consequatur similique unde eveniet voluptatum sunt qui adipisci cupiditate, eos, blanditiis vitae sapiente.
+      Corrupti!
+    </p>
+
+  </div>
+  <button id="hide-show-button">Hide and Show</button>
+  <div id="fade">
+    <img id="mercer" src="images/Mercer.jpeg" alt="A big sweet buddy">
+    <button>Mercer Fade</button>
+  </div>
+  <div id="slide">
+    <img id="quinn" src="images/Quinn.jpeg" alt="A sweet little pea">
+    <button>Quinn Slide</button>
+  </div>
+
+</body>
+
+</html>
