@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#button1").click(function () {
+        $("#div1").hide();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#button2").click(function () {
+        $("#div2").hide();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#first-h2").click(function () {
+        $("#first-h2").hide();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#second-h2").click(function () {
+        $("#second-h2").hide();
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <h1>JQuery things</h1>
+  <h2 id="first-h2">Click and you can make me disappear!</h2>
+  <h2 id="second-h2">I will also disappear when clicked.</h1>
+
+    <div id="div1">
+      <p>One paragraph is good.</p>
+      <p>...But two is better.</p>
+      <p>Three is the best!</p>
+    </div>
+    <button id="button1">Button 1</button>
+
+    <div id="div2">
+      <p>This is some stuff</p>
+      <p>And this is other stuff...</p>
+    </div>
+
+    <div id="button-div">
+
+      <button id="button2">Button 2</button>
+    </div>
+</body>
+
+</html>
