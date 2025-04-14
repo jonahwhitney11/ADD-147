@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4 Assessment 1</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#left").click(function () {
+        $("#square").animate({
+          marginLeft: '-=10px'
+        });
+      });
+
+      $("#right").click(function () {
+        $("#square").animate({
+          marginLeft: '+=10px'
+        });
+      });
+
+      $("#up").click(function () {
+        $("#square").animate({
+          marginTop: '-=10px'
+        });
+      });
+
+      $("#down").click(function () {
+        $("#square").animate({
+          marginTop: '+=10px'
+        });
+      });
+    });
+
+    $(document).ready(function () {
+      $("#kid-panel").click(function () {
+        $("#kids-pic").slideToggle(5000);
+      });
+      $("#stop-button").click(function () {
+        $("#kids-pic").stop();
+      });
+    });
+
+    $(document).ready(function () {
+      $("#hide-button").click(function () {
+        $("#callback-p").hide("slow", function () {
+          alert("The paragraph is now hidden");
+        });
+      });
+    });
+
+    $(document).ready(function () {
+      $("#chaining-button").click(function () {
+        $("#square2").css("backgroundColor", "darkcyan")
+          .slideUp(2000)
+          .fadeIn(2000);
+      });
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <header>JQuery Effects Assessment</header>
+
+  <h2>Animate</h2>
+  <div id="animate">
+    <button id="left">Left</button>
+    <button id="right">Right</button>
+    <button id="up">Up</button>
+    <button id="down">Down</button>
+  </div>
+  <div id="square"></div>
+
+  <h2>Stop</h2>
+  <button id="stop-button">Stop!</button>
+  <div id="stop">
+    <div id="kid-panel">Click me to see adorable kids!</div>
+    <img id="kids-pic" src="images/Kids.jpeg" alt="Two sweet kids.">
+  </div>
+
+  <h2>Callback</h2>
+  <button id="hide-button">Hide and Show</button>
+  <div id="callback-div">
+    <p id="callback-p">This is gonna go away when you click the hide and show button.</p>
+  </div>
+
+  <h2>Chaining</h2>
+  <div id="square2-container">
+    <div id="square2"></div>
+  </div>
+  <button id="chaining-button">Click this button!!!</button>
+
+</body>
+
+</html>

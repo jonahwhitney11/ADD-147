@@ -1,0 +1,40 @@
+header {
+  background-color: darkcyan;
+  font-size: xx-large;
+  color: azure;
+  padding: 10px;
+}
+
+#square, #square2 {
+  height: 100px;
+  width: 100px;
+  background-color: darkred;
+  position: relative;
+}
+
+#square2-container {
+  height: 100px;
+}
+
+#animate {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#kid-panel {
+  padding: 5px;
+  background-color: darkcyan;
+  color: azure;
+  margin-top: 5px;
+  width: 25%;
+}
+
+#kids-pic {
+  width: 25%;
+  display: none;
+}
+
+#chaining-button {
+  margin-top: 10px;
+  position: absolute;
+}
