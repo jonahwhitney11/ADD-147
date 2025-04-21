@@ -1,0 +1,81 @@
+/* ========================
+   CSS Reset
+======================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ========================
+   CSS Variables
+======================== */
+:root {
+  --background-color: rgb(212, 212, 212);
+  --background-color-dark: rgb(97, 97, 97);
+  --color-secondary-light: #7d59be;
+  --color-primary-dark: #006161;
+  --color-primary: cyan;
+  --color-secondary: indigo;
+}
+
+
+header, footer {
+  padding: 20px;
+  margin-bottom: 10px;
+  color: var(--color-secondary-light);
+  background-color: var(--color-primary);
+  text-align: center;
+}
+
+div {
+  margin: 50px;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+body {
+  background-color: var(--color-secondary-light);
+}
+
+form, .my-games {
+  margin: 20px;
+}
+
+button {
+  padding: 5px;
+}
+
+.dark {
+  background-color: var(--color-primary-dark);
+  color: var(--color-secondary);
+}
+
+.light {
+  color: var(--color-secondary-light);
+  background-color: var(--color-primary);
+}
+
+.dark-div {
+  background-color: var(--background-color-dark);
+  color: white;
+}
+
+.light-div {
+  background-color: var(--background-color);
+}
+
