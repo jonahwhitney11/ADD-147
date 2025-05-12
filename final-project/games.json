@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Breath of the Wild",
+    "publisher": "Nintendo",
+    "console": "Switch",
+    "release year": "2017"
+  },
+  {
+    "name": "Mega Man X",
+    "publisher": "Nintendo",
+    "console": "Super Nintendo",
+    "release year": "1994"
+  },
+  {
+    "name": "Pokemon X",
+    "publisher": "Gamefreak",
+    "console": "3DS",
+    "release year": "2013"
+  },
+  {
+    "name": "Pikmin 3",
+    "publisher": "Nintendo",
+    "console": "Wii U",
+    "release year": "2013"
+  },
+  {
+    "name": "Knights of the Old Republic",
+    "publisher": "Bioware",
+    "console": "XBOX",
+    "release year": "2003"
+  }
+]
